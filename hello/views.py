@@ -11,7 +11,7 @@ def index(request):
     # print(r.text)
     # return HttpResponse('<pre>' + r.text + '</pre>')
     times = int(os.environ.get('TIMES',3))
-    return HttpResponse('Hello! ' * times)
+    return HttpResponse('<h1>' + 'Hello! ' * times + '</h1>')
 
 
 def db(request):
